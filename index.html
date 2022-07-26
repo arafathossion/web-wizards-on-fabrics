@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #image-input{        
+        font-weight: bolder;
+        margin-top: 20px;
+      }
+      #display-image {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="display-image" width="600" height="500"></canvas>
+
+    <input
+      type="file"
+      id="image-input"
+      accept="image/jpeg, image/png, image/jpg"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
